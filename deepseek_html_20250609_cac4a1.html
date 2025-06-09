@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SecurityPro - Информационная безопасность</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+        
+        header {
+            background: #2c3e50;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        
+        nav {
+            background: #34495e;
+            display: flex;
+            justify-content: center;
+            padding: 0.5rem;
+        }
+        
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            margin: 0 5px;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        
+        nav a:hover {
+            background: #2c3e50;
+        }
+        
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 2rem 0;
+        }
+        
+        .main-article {
+            background: #fff;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+        
+        .service-card {
+            background: #fff;
+            padding: 1.5rem;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        footer {
+            background: #2c3e50;
+            color: #fff;
+            text-align: center;
+            padding: 1.5rem 0;
+            margin-top: 2rem;
+        }
+        
+        @media(max-width: 768px) {
+            .container {
+                width: 95%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>SecurityPro</h1>
+        <p>Комплексные решения в области информационной безопасности</p>
+    </header>
+    
+    <nav>
+        <a href="#about">О нас</a>
+        <a href="#services">Услуги</a>
+        <a href="#articles">Статьи</a>
+        <a href="#contacts">Контакты</a>
+    </nav>
+    
+    <div class="container">
+        <section id="about" class="main-article">
+            <h2>О информационной безопасности</h2>
+            <p>Информационная безопасность - это практика защиты информации от несанкционированного доступа, использования, раскрытия, нарушения, модификации или уничтожения.</p>
+            <p>В современном цифровом мире защита данных стала критически важной для бизнеса любого масштаба. Наши эксперты помогут вам выстроить эффективную систему защиты информации, соответствующую международным стандартам и требованиям законодательства.</p>
+        </section>
+        
+        <section id="services">
+            <h2>Наши услуги</h2>
+            <div class="services">
+                <div class="service-card">
+                    <h3>Аудит безопасности</h3>
+                    <p>Комплексная проверка вашей ИТ-инфраструктуры на уязвимости и потенциальные угрозы с последующими рекомендациями по устранению.</p>
+                </div>
+                
+                <div class="service-card">
+                    <h3>Защита персональных данных</h3>
+                    <p>Помощь в организации обработки персональных данных в соответствии с требованиями GDPR и другими нормативными актами.</p>
+                </div>
+                
+                <div class="service-card">
+                    <h3>Пентестинг</h3>
+                    <p>Имитация атак на ваши системы для выявления уязвимостей до того, как ими воспользуются злоумышленники.</p>
+                </div>
+                
+                <div class="service-card">
+                    <h3>Обучение сотрудников</h3>
+                    <p>Проведение тренингов по информационной безопасности для ваших сотрудников, чтобы снизить риски человеческого фактора.</p>
+                </div>
+                
+                <div class="service-card">
+                    <h3>Кибербезопасность</h3>
+                    <p>Защита от современных киберугроз, включая фишинг, ransomware и целевые атаки.</p>
+                </div>
+                
+                <div class="service-card">
+                    <h3>ИБ-консалтинг</h3>
+                    <p>Разработка стратегий и политик информационной безопасности, соответствующих вашим бизнес-процессам.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="articles" class="main-article">
+            <h2>Полезные статьи</h2>
+            <article>
+                <h3>5 главных угроз информационной безопасности в 2023 году</h3>
+                <p>В этой статье мы рассмотрим наиболее актуальные киберугрозы, с которыми сталкиваются компании, и способы защиты от них.</p>
+            </article>
+            
+            <article>
+                <h3>Как создать надежный пароль и не забыть его</h3>
+                <p>Простые и эффективные стратегии создания и хранения сложных паролей для всех ваших учетных записей.</p>
+            </article>
+            
+            <article>
+                <h3>GDPR: что нужно знать бизнесу</h3>
+                <p>Обзор требований Общего регламента по защите данных и шаги по приведению вашей компании в соответствие с ними.</p>
+            </article>
+        </section>
+    </div>
+    
+    <footer id="contacts">
+        <h2>Контакты</h2>
+        <p>Email: info@securitypro.example</p>
+        <p>Телефон: +7 (123) 456-78-90</p>
+        <p>© 2023 SecurityPro. Все права защищены.</p>
+    </footer>
+</body>
+</html>
